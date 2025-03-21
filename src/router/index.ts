@@ -25,6 +25,22 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ErrorView.vue'),
     },
+    {
+      path: '/record',
+      name: 'record',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/RecordScreen.vue'),
+    },
+    {
+      path: '/play',
+      name: 'play',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/PlayScreen.vue'),
+    },
   ],
 })
 
