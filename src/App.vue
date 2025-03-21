@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 
-
+// 故意报错
+// onMounted(() => {
+//   let testNum = null
+//   if(testNum!.length > 1){
+//     console.log("报错了")
+//   }
+// })
 
 </script>
 
@@ -11,6 +18,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/trigger">触发js异常</RouterLink>
       </nav>
     </div>
   </header>
@@ -72,12 +80,13 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
+    /* text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
 
     padding: 1rem 0;
-    margin-top: 1rem;
+    margin-top: 1rem; */
+    font-size: 1rem;
   }
 }
 </style>
