@@ -21,7 +21,7 @@
         </el-row>
         <el-row :gutter="20">
           <template v-if="item.origin">
-            {{ item.origin }}
+            <PreView :origin="item.orgin"/>
           </template>
           <template v-else>
             <div>{{ item.fileName }}</div>
@@ -51,6 +51,7 @@
 
 
 <script setup lang="ts">
+import PreView from './PreView.vue';
 import { onMounted, ref } from 'vue';
 import { ElMessage } from 'element-plus'
 import sourceMap from 'source-map-js';

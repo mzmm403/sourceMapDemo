@@ -9,7 +9,7 @@
 </template>
 <script setup lang="ts">
 const triggerTypeError = () => {
-    if (typeError.length > 0) {
+    if (TypeError.length > 0) {
             console.log("err!");
     }
 };
